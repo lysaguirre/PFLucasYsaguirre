@@ -30,7 +30,10 @@ h1{
     font-size: 2em;
     font-style: italic;
     font-weight: bolder;
+    font-weight: 400;
 }
+
+
 // NAVBAR /
 /* NAVBAR */
 nav {
@@ -111,23 +114,26 @@ background-image: url(/img/fondoheader.jpg);
  
 
 .frontend {
-    
+    padding: 20px;
     text-align: center;
     align-items: center;
     text-justify: justify;
+    font-weight: 400;
     
-    
-    
-        div col{
+        col{
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
             gap: 20;
             padding: 5;
             margin: 5;
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
                 h1{
                     font-size: 3em;
-                    font-family: Arial, Helvetica, sans-serif;
+                    
                 }
         }
 }
@@ -155,29 +161,27 @@ background-image: url(/img/fondoheader.jpg);
 
 /* MARKETING DIGITAL */
 
-.card-group{
-    
-    
-    width: 100%;
-    padding: 50px;
-    gap: 20px;
-        .card{
-            border: none;
+.mkt{
+        background-color:$secundario;
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            gap: 0;
+            border-radius: 8px;
+            
+                .card{
+                    
+                    transition: all 0.25s;
+                    overflow: hidden;
+                        .card:hover{
+                            transform: translateY(-15px);
+                            color: rosybrown;
+                        }
+                }
             
         }
-        div.card-body{
-            border: none;
-            background-color: $terceario;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            
-            
-
-        }
-    
-           
 }
-
 
 /* Pie */ 
 
