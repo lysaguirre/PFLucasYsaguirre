@@ -27,7 +27,8 @@ h1 {
 
 /* NAVBAR */
 nav {
-  font-weight: bold;
+  font-weight: 750;
+  background-color: #242424;
 }
 
 nav div {
@@ -37,6 +38,7 @@ nav div {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-weight: 700;
 }
 
 /* HEADER */
@@ -169,37 +171,59 @@ nav div {
 }
 
 .portfolio div h3 {
-  font-weight: bolder;
+  font-weight: 700;
   font-style: italic;
 }
 
 /* MARKETING DIGITAL */
 .mkt {
-  background-color: #ff6b81fd;
+  background-color: #fff;
 }
 
-.mkt div {
+.mkt .container {
+  width: 100%;
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 20px;
-  gap: 0;
-  border-radius: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.mkt div .card {
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+.mkt .container h1 {
+  font-weight: 600;
+}
+
+.mkt .container .card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
   overflow: hidden;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  background-color: lightgray;
+  color: black;
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.mkt div .card .card:hover {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  color: rosybrown;
+.mkt .container .card .card-header {
+  background: #ff6b81fd;
+  font-weight: 600;
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 /* Pie */

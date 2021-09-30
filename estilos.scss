@@ -37,11 +37,12 @@ h1{
 // NAVBAR /
 /* NAVBAR */
 nav {
-    font-weight: bold;
-    
+    font-weight: 750;
+    background-color: $terceario;
         div {
             display: flex;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+            font-weight: 700; }
     }
 
 
@@ -91,17 +92,17 @@ background-image: url(/img/fondoheader.jpg);
             div{
                 padding: 60px;
                     img{
-                        
-                            border-radius: 50%;
-                            height: 250px;
-                            object-fit: cover;
-                            object-position: top;
-                            width: 250px;
-                            padding: 20px;
+                        border-radius: 50%;
+                        height: 250px;
+                        object-fit: cover;
+                        object-position: top;
+                        width: 250px;
+                        padding: 20px;
                     }
-                    p{ font-size: 1.1em;
-                    border-bottom: solid 2px $terceario;
-                    padding: 20px;
+                    p{ 
+                        font-size: 1.1em;
+                        border-bottom: solid 2px $terceario;
+                        padding: 20px;
 
                 }
             }      
@@ -152,7 +153,7 @@ background-image: url(/img/fondoheader.jpg);
             div{
                 margin: 20px auto;
                 h3{
-                    font-weight: bolder;
+                    font-weight: 700;
                     font-style: italic;
                 }
                 
@@ -162,26 +163,40 @@ background-image: url(/img/fondoheader.jpg);
 /* MARKETING DIGITAL */
 
 .mkt{
-        background-color:$secundario;
-        div{
-            display: flex;
-            justify-content: space-evenly;
-            padding: 20px;
-            gap: 0;
-            border-radius: 8px;
-            
-                .card{
-                    
-                    transition: all 0.25s;
-                    overflow: hidden;
-                        .card:hover{
-                            transform: translateY(-15px);
-                            color: rosybrown;
+        background-color:#fff;
+            .container{
+                width: 100%;
+                max-width: 1100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                        h1{
+                            font-weight: 600;
                         }
-                }
-            
-        }
-}
+                        .card{
+                        width: 100%;
+                        margin: 20px;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+                        background-color: $fondo;
+                        color: black;
+                        cursor: default;
+                        transition: all 400ms ease;
+                        line-height: 1.5;
+                        text-align: center;
+                            .card-header{
+                            background: $secundario;
+                            font-weight: 600;
+                                    }
+                            }
+                    }
+    }
+ 
+ .card:hover{
+                box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+                transform: translateY(-3%);
+            }
 
 /* Pie */ 
 
