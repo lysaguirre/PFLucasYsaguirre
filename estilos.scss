@@ -163,7 +163,10 @@ background-image: url(/img/fondoheader.jpg);
 /* MARKETING DIGITAL */
 
 .mkt{
-        background-color:#fff;
+        background-image: url(/svg/wave.svg);
+        background-position: bottom;
+        background-size: cover;
+        margin: auto;
             .container{
                 width: 100%;
                 max-width: 1100px;
@@ -198,11 +201,37 @@ background-image: url(/img/fondoheader.jpg);
                 transform: translateY(-3%);
             }
 
-/* Pie */ 
-
-footer{
+/* CONTACTO */
+#contacto{
+        font-weight: 700;
+        width: 100%;
+        max-width: 1100px;
+        padding: 20 20;
+        gap: 20;
         div{
-            background-color: $terceario;
+        background-color: $terceario;
+        margin: 20;
+        height: 100%;
+        color: $principal;
+        
+        align-items: center;
+        text-align: center;
         }
+        .redes{
+        border-left: $principal solid 1px;
+        font-weight: 700;
+        background-color: none;
+            
+    }  
+}
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: $terceario;
+    color: $principal;
+    font-weight: 600;
 }
 
