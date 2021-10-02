@@ -42,40 +42,54 @@ nav div {
 }
 
 /* HEADER */
-.home {
+.principal {
   background-image: url(/img/fondoheader.jpg);
-}
-
-.bg {
-  text-align: center;
-  padding: 10px;
-  height: 100vh;
   background-size: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  background-position: center;
+  width: 100%;
+  height: 50vh;
 }
 
-.bg-text {
-  color: #ffffff;
-  font-weight: bold;
+.principal .sombra {
+  width: 100%;
+  height: 50vh;
+  background-color: #242424;
+  background-size: cover;
+  opacity: 0.7;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 2;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Heebo', sans-serif;
-  font-size: 30px;
 }
 
-.bg-titulo {
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: #ffffff;
+.principal .bg-text {
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.principal .bg-text h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.principal .bg-text h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-style: italic;
 }
 
 /* SOBRE MI */
@@ -97,7 +111,7 @@ nav div {
 }
 
 .sobremi div {
-  padding: 60px;
+  padding: 0px;
 }
 
 .sobremi div img {
@@ -113,7 +127,6 @@ nav div {
 
 .sobremi div p {
   font-size: 1.1em;
-  border-bottom: solid 2px #242424;
   padding: 20px;
 }
 
@@ -249,7 +262,7 @@ nav div {
   text-align: center;
 }
 
-#contacto .redes {
+#contacto div .redes {
   border-left: #ffffff solid 1px;
   font-weight: 700;
   background-color: none;
