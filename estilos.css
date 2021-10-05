@@ -18,13 +18,6 @@ body {
   font-size: 1.2em;
 }
 
-h1 {
-  font-size: 2em;
-  font-style: italic;
-  font-weight: bolder;
-  font-weight: 400;
-}
-
 /* NAVBAR */
 nav {
   font-weight: 750;
@@ -125,48 +118,66 @@ nav div {
   padding: 20px;
 }
 
+.sobremi div h1 {
+  font-size: 1.2;
+  font-weight: bolder;
+}
+
 .sobremi div p {
   font-size: 1.1em;
   padding: 20px;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 400;
+  border-bottom: #242424 solid 2px;
 }
 
 /* FRONTEND */
-.frontend {
+#caja1 {
   padding: 20px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-justify: justify;
   font-weight: 400;
 }
 
-.frontend col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#caja1 #caja2 {
   gap: 20;
   padding: 5;
   margin: 5;
+  font-style: italic;
 }
 
-.frontend col img {
-  width: 400px;
-  height: 400px;
+#caja1 #caja2 h1 {
+  font-size: 1.2;
+  font-weight: bolder;
 }
 
-.frontend col h1 {
-  font-size: 3em;
+#caja1 #caja2 h2 {
+  font-size: 1;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#caja1 #caja2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: flex-start;
 }
 
 #cajapadre {
   background-image: linear-gradient(45deg, #ffffff 0%, lightgray 100%);
   padding: 50px;
+}
+
+#cajapadre #cajahijo {
+  font-size: 20px;
 }
 
 /* PORTFOLIO */
@@ -231,8 +242,17 @@ nav div {
 }
 
 .mkt .container .card .card-header {
-  background: #ff6b81fd;
+  background: #242424;
   font-weight: 600;
+  color: #ffffff;
+}
+
+.mkt .container .card .card-text {
+  margin: 2px;
+  padding: 2px;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
 }
 
 .card:hover {

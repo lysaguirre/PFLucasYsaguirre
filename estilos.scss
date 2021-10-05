@@ -26,12 +26,7 @@ body{
     font-size: 1.2em;
 }
 
-h1{
-    font-size: 2em;
-    font-style: italic;
-    font-weight: bolder;
-    font-weight: 400;
-}
+
 
 
 // NAVBAR /
@@ -63,7 +58,6 @@ nav {
                 filter:blur(1px);
                 position: absolute;
             }
-        
             .bg-text{
                 color: $principal;
                 height:100%;
@@ -82,16 +76,8 @@ nav {
                                 font-weight: 500;
                                 font-style: italic;
                             }
-                    
-                    
-                
-                
-
-                 
-                 
-            }
+                        }
 }
-  
     
  /* SOBRE MI */
 .sobremi{
@@ -113,9 +99,17 @@ nav {
                         padding: 20px;
                         
                     }
+                    h1{
+                        font-size: 1.2;
+                        font-weight: bolder;
+                    }
                     p{ 
                         font-size: 1.1em;
                         padding: 20px;
+                        line-height: 1.5;
+                        font-style: italic;
+                        font-weight: 400;
+                        border-bottom:$terceario solid 2px;
                         
 
                 }
@@ -128,34 +122,48 @@ nav {
  /* FRONTEND */
  
 
-.frontend {
+#caja1{
     padding: 20px;
     text-align: center;
     align-items: center;
-    text-justify: justify;
     font-weight: 400;
-    
-        col{
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
+    #caja2{
             gap: 20;
             padding: 5;
             margin: 5;
-                img{
-                    width: 400px;
-                    height: 400px;
-                }
+            font-style: italic;
+                
                 h1{
-                    font-size: 3em;
+                    font-size: 1.2;
+                    font-weight: bolder;
                     
                 }
+                h2{
+                    font-size: 1;
+                    font-style: italic;
+                    font-weight: bolder;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: flex-start;
+                }
         }
-}
+    }
+
 
 #cajapadre{
     background-image: linear-gradient(45deg,$principal 0%,$fondo  100%);
-    padding: 50px;}
+    padding: 50px;
+        #cajahijo
+            {
+                font-size: 20px;
+                
+            }
+    
+    
+    
+    }
 
 /* PORTFOLIO */
 
@@ -203,9 +211,17 @@ nav {
                         line-height: 1.5;
                         text-align: center;
                             .card-header{
-                            background: $secundario;
+                            background: $terceario;
                             font-weight: 600;
-                                    }
+                            color: $principal;
+                                     }
+                            .card-text{
+                                margin: 2px;
+                                padding: 2px;
+                                font-weight: 600;
+                                font-style: italic;
+                                font-size: 16px;
+                            }
                             }
                     }
     }
