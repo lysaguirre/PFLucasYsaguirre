@@ -24,16 +24,6 @@ nav {
   background-color: #242424;
 }
 
-nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-weight: 700;
-}
-
 /* HEADER */
 .principal {
   background-image: url(/img/fondoheader.jpg);
